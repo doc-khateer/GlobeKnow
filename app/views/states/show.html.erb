@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<%= image_tag @state.flag.url %>
+<%= image_tag @state.flag.url(:medium) %>
+<%= image_tag @state.flag.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @state.name %>
+</p>
+
+<p>
+  <strong>Capital:</strong>
+  <%= @state.capital %>
+</p>
+
+<%= link_to 'Edit', edit_state_path(@state) %> |
+<%= link_to 'Back', states_path %>

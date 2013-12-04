@@ -1,0 +1,36 @@
+<%= link_to "Back to Welcome Page", root_path %>
+<h1>Listing countries</h1>
+
+<%= button_to "New Country", new_country_path, :class => "button", :method => :get  %>
+
+<table>
+  <thead>
+    <tr>
+      <td>#</td>
+      <td width="20"></td>
+      <th>Name</th>
+      <td width="20"></td>
+      <th>Capital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= country.id %></td>
+        <td width="20"></td>
+        <td><%= link_to country.name, country %></td>
+        <td width="20"></td>
+        <td><%= country.capital %></td>
+        <td width="20"></td>
+        <td><%= link_to 'Edit', edit_country_path(country) %> | 
+            <%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
