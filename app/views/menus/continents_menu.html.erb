@@ -1,7 +1,10 @@
 <h1>What Do You GlobeKnow About...</h1>
 
-<table>
-<% continents.each do |continent| %>
-	<%= link_to image_tag(continent.photo.url), continent_path(continent), style:"continentbox" %>
-	...<%= continent.name %>?
-<% end %>
+<div id="centerynot">
+	<% @continents.each do |continent| %>
+		<div class="picturebox">
+			<%= link_to image_tag(continent.map.url, style:"width:200px;height:200px", title:continent.name, alt:continent.name), countries_menu_path(continent) %><br />
+			...<%= continent.name %>?
+		</div>
+	<% end %>
+</div>

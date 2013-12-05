@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<%= image_tag @continent.map.url(:medium) %>
+<%= image_tag @continent.map.url(:thumb) %>
+</p>
+
+<p>
+<%= image_tag @continent.outline.url(:medium) %>
+<%= image_tag @continent.outline.url(:thumb) %>
+
+<p>
   <strong>Name:</strong>
   <%= @continent.name %>
 </p>

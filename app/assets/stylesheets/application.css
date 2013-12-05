@@ -13,5 +13,25 @@
  */
 
 body{
-	background-color: #FBF5EF
+	background-color:#E0F2F7;
+}
+
+.picturebox{
+	background-color: #FBFBEF;
+	width: 215px;
+	height: 215px;
+	display: inline-block;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+	margin: 24px;
+	-webkit-box-shadow:0 0 20px blue; 
+	-moz-box-shadow: 0 0 20px blue; 
+	box-shadow:0 0 20px blue;
+}
+
+#centerynot{
+	width: 100%;
+  text-align: center;
 }

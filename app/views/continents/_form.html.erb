@@ -1,4 +1,4 @@
-<%= form_for(@continent) do |f| %>
+<%= form_for(@continent, :html => { :multipart => true }) do |f| %>
   <% if @continent.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@continent.errors.count, "error") %> prohibited this continent from being saved:</h2>
@@ -14,6 +14,12 @@
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    Choose a map: <%= f.file_field :map %>
+  </div>
+  <div class="field">
+    Choose an outline: <%= f.file_field :outline %>
   </div>
   <div class="actions">
     <%= f.submit %>

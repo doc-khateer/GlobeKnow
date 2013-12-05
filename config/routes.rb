@@ -13,6 +13,8 @@ GlobeKnow::Application.routes.draw do
 
   get "continents_menu" => "menus#continents_menu", as: :continents_menu
 
+  get "countries_menu" => "menus#countries_menu", as: :countries_menu
+
   get "enter_info" => "enter_info#welcome", as: :enter_info
 
   # The priority is based upon order of creation: first created -> highest priority.

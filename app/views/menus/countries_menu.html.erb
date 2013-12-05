@@ -1,0 +1,20 @@
+<h1>Test Your Knowledge of <%= @continent.name %>'s...</h1>
+
+<div id="centerynot">
+		<div class="picturebox">
+			<%= link_to image_tag(continent.map.url, style:"width:200px;height:200px", title:continent.name, alt:continent.name), countries_menu_path(continent) %><br />
+			...Countries?
+		</div>
+		<div class="picturebox">
+			<%= link_to image_tag(continent.map.url, style:"width:200px;height:200px", title:continent.name, alt:continent.name), countries_menu_path(continent) %><br />
+			...Captials?
+		</div>
+</div>
+<% if @continent.name == "North America" %>
+	<div id="centerynot">
+		<div class="picturebox">
+			<%= link_to image_tag(continent.map.url, style:"width:200px;height:200px", title:continent.name, alt:continent.name), usa_menu_path %><br />
+			United States Quizes!
+		</div>
+	</div>
+<% end %>

@@ -11,12 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203220053) do
+ActiveRecord::Schema.define(version: 20131205125120) do
 
   create_table "continents", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "map_file_name"
+    t.string   "map_content_type"
+    t.integer  "map_file_size"
+    t.datetime "map_updated_at"
+    t.string   "outline_file_name"
+    t.string   "outline_content_type"
+    t.integer  "outline_file_size"
+    t.datetime "outline_updated_at"
   end
 
   create_table "countries", force: true do |t|
