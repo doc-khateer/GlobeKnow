@@ -1,28 +1,5 @@
-== README
+== GlobeKnow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was my unfinished final project from my time as a student at Tech Talent South. It was really a project that was better suited for JavaScript.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+With that in mind, I later did make something akin to this in JS, which can be found on my website: [GeoQuic](http://aarongroch.com/geoquiz.html)
